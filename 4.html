@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logitech India</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .carousel {
+            width: 100%;
+            max-width: none;
+            overflow: hidden;
+            border-radius: 0;
+            box-shadow: none;
+            position: relative;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            position: relative;
+            text-align: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .slide .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            width: 80%;
+            max-width: 500px;
+        }
+        .slide h1 {
+            margin: 0 0 10px;
+        }
+        .slide p {
+            margin: 0 0 10px;
+        }
+        .slide a {
+            color: white;
+            text-decoration: none;
+        }
+        .slide a:hover {
+            text-decoration: underline;
+        }
+        .slide button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+            opacity: 1;
+            transition: all 0.3s ease;
+        }
+        .slide button:hover {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            opacity: 1;
+        }
+        .controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .controls button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .controls button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .indicators {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .indicator {
+            width: 10px;
+            height: 10px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .indicator.active {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <div class="slides">
+            
+            <div class="slide">
+                <img class="thumbnail" src="images/dfs-corporate-banner-desktop.jpg">
+                <div class="content">
+                    <h1>DESIGN FOR SUSTAINABILITY</h1>
+                    <p>Design with less. Design smarter. Design for progress.</p>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+            <div class="slide">
+              <img class="thumbnail" src="images/pcr-plastic-desktop.jpeg">
+              <div class="content">
+                  <h1>NEXT LIFE PLASTICS</h1>
+                  <p>From recycled plastics to new possibilities.</p>
+                  <p>POST CONSUMER RECYCLED PLASTICS</p>
+                  <h2>DESIGN FOR SUSTAINABILITY</h2>
+                  <button>Supporting sustainable design</button>
+              </div>
+          </div>
+          <div class="slide">
+              <img class="thumbnail" src="images/future-positive-challenge-desktop.jpg">
+              <div class="content">
+                  <h1>FUTUREPOSITIVE CHALLENGE</h1>
+                  <p>A technology and engineering challenge for disruptors who have a desire to make a meaningful contribution to a positive future.</p>
+                  <button>LEARN MORE</button>
+              </div>
+          </div>
+          <div class="slide">
+              <img class="thumbnail" src="images/climate-positive-desktop.jpeg">
+              <div class="content">
+                  <h1>SUSTAINABILITY</h1>
+                  <h2>CLIMATE ACTION</h2>
+                  <p>We're going beyond what countries have committed to in the Paris Agreement. And we're doing it 20 years earlier because it's work that cannot wait.</p>
+                  <button>LOGITECH'S CLIMATE POSITIVE APPROACH</button>
+              </div>
+          </div>
+          <div class="slide">
+              <img class="thumbnail" src="images/carbon-methodology-desktop.jpeg">
+              <div class="content">
+                  <h1>SUSTAINABILITY</h1>
+                  <h2>CARBON CLARITY</h2>
+                  <p>Logitech is the first consumer electronics company to label its products with the amount of climate-warming carbon used to create them. Now, you can make a choice that's informed not just by the price and features of your purchase, but by its environmental impact too.</p>
+                  <button>SHARING HOW WE DO IT</button>
+              </div>
+          </div>
+          <div class="slide">
+              <img class="thumbnail" src="images/bg-logicares-desktop.jpg">
+              <div class="content">
+                  <h1>SOCIAL IMPACT</h1>
+                  <h2>LOGICARES</h2>
+                  <p>Giving back and driving change are not only a social responsibility but a key aspect of our corporate culture.</p>
+                  <button>LOGICARES FOCUS</button>
+              </div>
+          </div>
+          <div class="slide">
+              <img class="thumbnail" src="images/bg-design-desktop.jpg">
+              <div class="content">
+                  <h1>DESIGN AWARDS</h1>
+                  <p>Design is at the center of everything we do, in every team and discipline.</p>
+                  <button >AWARDS WON</button>
+              </div>
+          </div>
+          <div class="slide">
+            <img class="thumbnail" src="images/bg-about-desktop.jpg">
+            <div class="content">
+                <h1>ABOUT LOGITECH</h1>
+                <p>With products sold in almost every country in the world, Logitech has developed into a multi-brand company designing products that bring people together through music, gaming, video, and computing.</p>
+                <button>LOGITECH STORY</button>
+            </div>
+        </div>
+      </div>
+            
+        </div>
+        <div class="controls">
+            <button onclick="prevSlide()">&#10094;</button>
+            <button onclick="nextSlide()">&#10095;</button>
+        </div>
+        <div class="indicators">
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+        const indicatorsContainer = document.querySelector('.indicators');
+
+        for (let i = 0; i < totalSlides; i++) {
+            const indicator = document.createElement('div');
+            indicator.classList.add('indicator');
+            indicator.addEventListener('click', () => goToSlide(i));
+            indicatorsContainer.appendChild(indicator);
+        }
+
+        updateIndicators();
+
+        function showSlide(index) {
+            if (index >= totalSlides) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = index;
+            }
+            slides.style.transform = `translateX(${-currentSlide * 100}%)`;
+            updateIndicators();
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function goToSlide(index) {
+            showSlide(index);
+        }
+
+        function updateIndicators() {
+            const indicators = document.querySelectorAll('.indicator');
+            indicators.forEach((indicator, index) => {
+                if (index === currentSlide) {
+                    indicator.classList.add('active');
+                } else {
+                    indicator.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
